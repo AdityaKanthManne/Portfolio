@@ -94,11 +94,22 @@
 .usf-mark { background: #006747; color: #fff; box-shadow: inset 0 0 0 8px #cfc493; }
 .aws-mark { position: relative; background: #232f3e; color: #fff; font-size: 38px; font-weight: 700; text-transform: lowercase; }
 .aws-mark span { position: absolute; bottom: 29px; width: 60px; height: 15px; border-bottom: 5px solid #ff9900; border-radius: 50%; transform: rotate(5deg); }
-.google-mark { display: flex; background: #fff; box-shadow: inset 0 0 0 1px var(--line); font-size: 25px; letter-spacing: -.08em; }
-.google-mark span:nth-child(1), .google-mark span:nth-child(4) { color: #4285f4; }
-.google-mark span:nth-child(2), .google-mark span:nth-child(6) { color: #ea4335; }
-.google-mark span:nth-child(3) { color: #fbbc05; }
-.google-mark span:nth-child(5) { color: #34a853; }
+.cert-image {
+  display: grid;
+  flex: 0 0 132px;
+  width: 132px;
+  height: 132px;
+  place-items: center;
+  align-self: center;
+}
+.cert-image img {
+  width: 124px;
+  height: 124px;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+}
 .certifications { border-top: 1px solid var(--line); }
 .work, .experience, .about, .education, .certifications, .contact { scroll-margin-top: 58px; }
 a:focus-visible, button:focus-visible { outline: 3px solid #2997ff; outline-offset: 4px; border-radius: 6px; }

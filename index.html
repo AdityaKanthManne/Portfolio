@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="research.css">
-  <link rel="stylesheet" href="strategy-board.css">
+  <link rel="stylesheet" href="intelligence-network.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -33,66 +33,68 @@
   </header>
 
   <main id="main">
-    <section class="hero strategy-world section-dark" aria-labelledby="strategy-title">
-      <canvas class="strategy-canvas" id="strategy-canvas" aria-hidden="true"></canvas>
-      <div class="strategy-noise" aria-hidden="true"></div>
+    <section class="hero intelligence-world section-dark" aria-labelledby="intelligence-title">
+      <canvas class="intelligence-canvas" id="intelligence-canvas" aria-hidden="true"></canvas>
+      <div class="intelligence-noise" aria-hidden="true"></div>
 
-      <div class="strategy-title">
-        <p class="eyebrow">AI · Quantitative Finance · Game Theory</p>
-        <h1 id="strategy-title">Every market is a <span>strategic game.</span></h1>
-        <p>I’m Aditya. Move the agent across the board to explore my profile.</p>
+      <div class="intelligence-shell">
+        <div class="intelligence-main">
+          <div class="intelligence-copy">
+            <p class="eyebrow">AI · Quantitative Finance · Game Theory</p>
+            <h1 id="intelligence-title">I build intelligence for <span>strategic markets.</span></h1>
+            <p>Explore the network to see how my research, experience, and skills connect.</p>
+          </div>
+
+          <div class="network-stage" aria-label="Interactive profile network">
+            <svg class="network-links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <path data-link="about" d="M50 50 L19 22"></path>
+              <path data-link="experience" d="M50 50 L79 19"></path>
+              <path data-link="projects" d="M50 50 L88 54"></path>
+              <path data-link="education" d="M50 50 L74 82"></path>
+              <path data-link="skills" d="M50 50 L27 82"></path>
+              <path data-link="contact" d="M50 50 L12 55"></path>
+            </svg>
+
+            <div class="network-core" aria-label="Aditya Kanth Manne profile core">
+              <span class="core-orbit orbit-one" aria-hidden="true"></span>
+              <span class="core-orbit orbit-two" aria-hidden="true"></span>
+              <img src="assets/images/AdityakanthManne.png" alt="Aditya Kanth Manne" width="120" height="120">
+              <div><strong>Aditya</strong><span>AI × Markets</span></div>
+            </div>
+
+            <nav class="network-nodes" aria-label="Profile sections">
+              <button type="button" data-node="about"><i>01</i><strong>About</strong><span>Research focus</span></button>
+              <button type="button" data-node="experience"><i>02</i><strong>Experience</strong><span>Career path</span></button>
+              <button type="button" data-node="projects"><i>03</i><strong>Projects</strong><span>Active systems</span></button>
+              <button type="button" data-node="education"><i>04</i><strong>Education</strong><span>Academic path</span></button>
+              <button type="button" data-node="skills"><i>05</i><strong>Skills</strong><span>Capability matrix</span></button>
+              <button type="button" data-node="contact"><i>06</i><strong>Contact</strong><span>Connect</span></button>
+            </nav>
+          </div>
+
+          <div class="network-legend" aria-live="polite">
+            <span><i class="legend-dot"></i>Profile network online</span>
+            <span id="network-status">Select a node to explore</span>
+          </div>
+        </div>
+
+        <aside class="intelligence-panel" id="intelligence-panel" aria-live="polite" aria-label="Profile information">
+          <div class="panel-kicker"><span id="panel-number">01</span><span id="panel-category">ABOUT ME</span></div>
+          <h2 id="panel-title">Intelligence meets uncertainty.</h2>
+          <div class="panel-body" id="panel-body">
+            <p>I’m an AI Research Engineer in Finance with experience across data engineering, data science, and business analytics.</p>
+            <p>My interests sit where <strong>artificial intelligence, quantitative finance, and game theory</strong> meet.</p>
+            <div class="panel-tags"><span>Prediction markets</span><span>Market microstructure</span><span>Decision systems</span></div>
+          </div>
+          <div class="panel-actions" id="panel-actions">
+            <a href="#about">Full profile ↓</a>
+            <a href="assets/AdityaResume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+          </div>
+          <div class="panel-index" aria-hidden="true"><span>PROFILE NODE</span><strong id="panel-index-value">01 / 06</strong></div>
+        </aside>
       </div>
 
-      <div class="strategy-status" aria-live="polite">
-        <span class="status-pulse" aria-hidden="true"></span>
-        <span id="strategy-status-text">Agent online · Choose your first move</span>
-      </div>
-
-      <nav class="strategy-map" aria-label="Interactive profile map">
-        <p>Profile map</p>
-        <button type="button" data-zone="about"><span>01</span>About</button>
-        <button type="button" data-zone="education"><span>02</span>Education</button>
-        <button type="button" data-zone="experience"><span>03</span>Experience</button>
-        <button type="button" data-zone="projects"><span>04</span>Projects</button>
-        <button type="button" data-zone="skills"><span>05</span>Skills</button>
-        <button type="button" data-zone="contact"><span>06</span>Contact</button>
-      </nav>
-
-      <aside class="strategy-panel is-open" id="strategy-panel" aria-live="polite" aria-label="Profile information">
-        <button class="panel-close" type="button" aria-label="Close profile panel">×</button>
-        <div class="panel-kicker"><span id="panel-number">00</span><span id="panel-category">PLAYER PROFILE</span></div>
-        <div class="panel-identity" id="panel-identity">
-          <img src="assets/images/AdityakanthManne.png" alt="" width="72" height="72">
-          <div><strong>Aditya Kanth Manne</strong><span>AI Research Engineer · Finance</span></div>
-        </div>
-        <h2 id="panel-title">Welcome to my strategy board.</h2>
-        <div class="panel-body" id="panel-body">
-          <p>I explore how intelligent agents can forecast uncertainty, understand markets, and make better strategic decisions.</p>
-          <div class="panel-tags"><span>Artificial Intelligence</span><span>Quant Finance</span><span>Game Theory</span></div>
-        </div>
-        <div class="panel-actions" id="panel-actions">
-          <button class="panel-move" type="button" data-zone="about">Make the first move <span>→</span></button>
-          <a href="assets/AdityaResume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
-        </div>
-      </aside>
-
-      <div class="strategy-controls" aria-label="Move agent">
-        <p><span class="desktop-instruction">Use arrow keys or WASD</span><span class="mobile-instruction">Move the agent</span></p>
-        <div class="d-pad">
-          <button type="button" data-move="up" aria-label="Move up">↑</button>
-          <button type="button" data-move="left" aria-label="Move left">←</button>
-          <button type="button" data-move="down" aria-label="Move down">↓</button>
-          <button type="button" data-move="right" aria-label="Move right">→</button>
-        </div>
-      </div>
-
-      <div class="strategy-progress" aria-label="Profile discovery progress">
-        <span id="progress-count">0 / 6 discovered</span>
-        <div class="progress-track"><i id="progress-bar"></i></div>
-      </div>
-
-      <a class="classic-view" href="#work">View classic portfolio <span aria-hidden="true">↓</span></a>
-      <p class="sr-only" id="strategy-help">Use the arrow keys or WASD to move between profile areas. You can also use the Profile map buttons.</p>
+      <a class="classic-view" href="#work">Continue to research <span aria-hidden="true">↓</span></a>
     </section>
 
     <section class="intro section-light">
@@ -128,7 +130,7 @@
     <section class="experience section-dark" id="experience">
       <div class="shell section-heading reveal"><p class="section-label">Experience</p><h2>From raw data to real-world impact.</h2></div>
       <div class="shell timeline">
-        <article class="timeline-item reveal"><div><p class="timeline-date">2024 — Present</p><h3>Data Analyst</h3><p class="company">Early Learning Coalition of Flagler & Volusia</p></div><div><p>Applying data science and business analytics to operational decision-making, reporting, and data-informed program delivery.</p></div></article>
+        <article class="timeline-item reveal"><div><p class="timeline-date">2024 — Present</p><h3>Data Engineer</h3><p class="company">Early Learning Coalition of Flagler & Volusia</p></div><div><p>Building reliable data workflows, automating operational reporting, and translating program data into decision-ready insights for early-learning services.</p></div></article>
         <article class="timeline-item reveal"><div><p class="timeline-date">Feb — Jul 2024</p><h3>Business Intelligence Analyst</h3><p class="company">Smart Grow Infotech LLC</p></div><div><p>Worked with data analysis, reporting, and business intelligence to turn operational information into clearer decisions.</p></div></article>
         <article class="timeline-item reveal"><div><p class="timeline-date">2022 — 2023</p><h3>Outdoor Recreation Center Lead</h3><p class="company">University of South Florida</p></div><div><p>Led day-to-day operations and supported a high-volume university recreation environment while completing graduate study.</p></div></article>
         <article class="timeline-item reveal"><div><p class="timeline-date">2018 — 2021</p><h3>Junior Data Analyst</h3><p class="company">Vesper Distributions</p></div><div><p>Developed early experience in data analysis, machine-learning libraries, and Python-based speech processing.</p></div></article>
@@ -138,7 +140,7 @@
     <section class="about section-light" id="about">
       <div class="shell about-grid">
         <div class="portrait-wrap reveal"><img src="assets/images/AdityakanthManne.png" alt="Aditya Kanth Manne" loading="lazy"></div>
-        <div class="about-copy reveal"><p class="section-label">About</p><h2>AI research for financial decisions.</h2><p>I’m an AI Research Engineer in Finance with more than three years of experience across data science and business analytics. I’m especially interested in systems that learn from market behavior and remain useful under uncertainty.</p><p>I’m open to roles in quantitative research, prediction markets, and ML/AI-driven market making—teams where rigorous experiments, strong engineering, and market intuition meet.</p><div class="skill-groups"><div><strong>Research</strong><span>Prediction · Market microstructure · Options · Risk</span></div><div><strong>Model</strong><span>Machine learning · NLP · Time series · RL</span></div><div><strong>Build</strong><span>Python · SQL · AWS · Git</span></div></div></div>
+        <div class="about-copy reveal"><p class="section-label">About</p><h2>AI research for financial decisions.</h2><p>I’m an AI Research Engineer in Finance with more than three years of experience across data engineering, data science, and business analytics. I’m especially interested in systems that learn from market behavior and remain useful under uncertainty.</p><p>I’m open to roles in quantitative research, prediction markets, and ML/AI-driven market making—teams where rigorous experiments, strong engineering, and market intuition meet.</p><div class="skill-groups"><div><strong>Research</strong><span>Prediction · Market microstructure · Options · Risk</span></div><div><strong>Model</strong><span>Machine learning · NLP · Time series · RL</span></div><div><strong>Build</strong><span>Python · SQL · AWS · Git</span></div></div></div>
       </div>
     </section>
 
@@ -156,7 +158,7 @@
       <div class="shell certification-grid">
         <article class="credential cert-card reveal"><div class="cert-mark aws-mark" role="img" aria-label="Amazon Web Services">aws<span></span></div><div><p>2025</p><h3>AWS Machine Learning Engineer — Associate</h3><a href="https://www.credly.com/badges/4bb6cfda-81a1-4c8b-b867-775bef4367dd/public_url" target="_blank" rel="noreferrer">Verify credential ↗</a></div></article>
         <article class="credential cert-card reveal"><div class="cert-mark usf-mark" role="img" aria-label="University of South Florida">USF</div><div><p>2023</p><h3>Technology Management Graduate Certificate</h3><span>University of South Florida</span><a href="https://www.michaelsutter.com/ediploma?fn=diplomastatuscheck&amp;key=020000009c153f0bc3fb7508cb0fd41bfa76507c6c6ce606cbd14b7441426fdc6e87a95b299e4d4b26555b296a536832ce0800c20e47eef3a808565bbfdde11620291b5f" target="_blank" rel="noreferrer">Verify certificate ↗</a></div></article>
-        <article class="credential cert-card reveal"><div class="cert-mark google-mark" role="img" aria-label="Google"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div><div><p>2022</p><h3>Google Project Management Professional Certificate</h3><span>Google · Coursera</span><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75PY5QSAD3GG" target="_blank" rel="noreferrer">Verify certificate ↗</a></div></article>
+        <article class="credential cert-card reveal"><div class="cert-image"><img src="assets/images/Google PM.png" alt="Google Project Management certificate badge" loading="lazy"></div><div><p>2022</p><h3>Google Project Management Professional Certificate</h3><span>Google · Coursera</span><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75PY5QSAD3GG" target="_blank" rel="noreferrer">Verify certificate ↗</a></div></article>
       </div>
     </section>
 
