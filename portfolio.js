@@ -69,10 +69,9 @@ if (intelligenceCanvas) {
       title: 'Engineering data into decisions.',
       body: `
         <ul class="panel-list">
-          <li><strong>Data Engineer</strong><span>Early Learning Coalition · 2024—Present</span></li>
-          <li><strong>Business Intelligence Analyst</strong><span>Smart Grow Infotech · 2024</span></li>
-          <li><strong>Outdoor Recreation Center Lead</strong><span>University of South Florida · 2022—2023</span></li>
-          <li><strong>Junior Data Analyst</strong><span>Vesper Distributions · 2018—2021</span></li>
+          <li><strong>Data Coordinator</strong><span>Early Learning Coalition of Flagler &amp; Volusia · Jul 2024—Present · Python ETL, SQL Server, vendor APIs, and Tableau</span></li>
+          <li><strong>BI Analyst</strong><span>Smart Grow Infotech · Feb 2024—Jul 2024 · Churn modeling, forecasting, FastAPI, Airflow, and MLflow</span></li>
+          <li><strong>Data Analyst</strong><span>Vesper Distributions · Oct 2018—Nov 2021 · Machine learning for retention and automated Python/SQL validation</span></li>
         </ul>`,
       actions: '<a href="#experience">View timeline ↓</a><a href="https://www.linkedin.com/in/adityakanthmanne/" target="_blank" rel="noreferrer">LinkedIn ↗</a>'
     },
