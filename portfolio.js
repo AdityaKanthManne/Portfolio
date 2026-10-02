@@ -100,9 +100,7 @@ if (strategyCanvas) {
       body: `
         <ul class="panel-list">
           <li><strong>Data Analyst</strong><span>Early Learning Coalition · 2024—Present</span></li>
-          <li><strong>Business Intelligence Analyst</strong><span>Smart Grow Infotech · 2024</span></li>
           <li><strong>Outdoor Recreation Center Lead</strong><span>University of South Florida · 2022—2023</span></li>
-          <li><strong>Junior Data Analyst</strong><span>Vesper Distributions · 2018—2021</span></li>
         </ul>`,
       actions: '<a href="#experience">View timeline ↓</a><a href="assets/AdityaResume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>'
     },
