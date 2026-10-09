@@ -3,175 +3,291 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aditya Kanth Manne — AI Research Engineer in Finance focused on prediction markets, quantitative research, and ML-driven market making.">
-  <meta name="theme-color" content="#f5f5f7">
-  <title>Aditya Kanth Manne — AI Research Engineer in Finance</title>
+  <meta name="description" content="Aditya Kanth Manne — AI/ML and quantitative researcher building rigorous systems for market intelligence, risk, and decision-making.">
+  <meta name="theme-color" content="#07100e">
+  <title>Aditya Kanth Manne — AI/ML &amp; Quantitative Research</title>
   <script>document.documentElement.classList.add('js')</script>
   <link rel="icon" type="image/png" sizes="64x64" href="assets/images/profile-favicon.png">
-  <link rel="apple-touch-icon" href="assets/images/AdityakanthManne.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="research.css">
-  <link rel="stylesheet" href="intelligence-network.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header" id="top">
     <nav class="nav shell" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Aditya Kanth Manne, home">AKM</a>
+      <a class="brand" href="#top" aria-label="Aditya Kanth Manne, home">
+        <span class="brand-mark">AKM</span>
+        <span class="brand-role">AI/ML × QUANT</span>
+      </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <div class="nav-links" id="nav-links">
-        <a href="#work">Research</a>
+        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-resume" href="assets/AdityaResume.pdf" target="_blank" rel="noreferrer">Résumé</a>
+        <a href="#profile">Profile</a>
+        <a href="resources.html">Resources</a>
+        <a href="assets/Aditya_Kanth_Manne_Resume.pdf" target="_blank" rel="noreferrer">Résumé</a>
+        <a class="nav-contact" href="#contact">Connect</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero intelligence-world section-dark" aria-labelledby="intelligence-title">
-      <canvas class="intelligence-canvas" id="intelligence-canvas" aria-hidden="true"></canvas>
-      <div class="intelligence-noise" aria-hidden="true"></div>
+    <section class="hero section-dark" aria-labelledby="hero-title">
+      <div class="market-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
 
-      <div class="intelligence-shell">
-        <div class="intelligence-main">
-          <div class="intelligence-copy">
-            <p class="eyebrow">AI · Quantitative Finance · Game Theory</p>
-            <h1 id="intelligence-title">I build intelligence for <span>strategic markets.</span></h1>
-            <p>Explore the network to see how my research, experience, and skills connect.</p>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> AI/ML × Quantitative Research</p>
+          <h1 id="hero-title">Researching intelligence for <span>uncertain markets.</span></h1>
+          <p class="hero-lede">I build machine-learning and quantitative systems for signal discovery, market simulation, risk-aware decision-making, and reproducible research.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore research <span>↓</span></a>
+            <a class="button button-ghost" href="assets/Aditya_Kanth_Manne_Resume.pdf" target="_blank" rel="noreferrer">View résumé <span>↗</span></a>
           </div>
-
-          <div class="network-stage" aria-label="Interactive profile network">
-            <svg class="network-links" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <path data-link="about" d="M50 50 L19 22"></path>
-              <path data-link="experience" d="M50 50 L79 19"></path>
-              <path data-link="projects" d="M50 50 L88 54"></path>
-              <path data-link="education" d="M50 50 L74 82"></path>
-              <path data-link="skills" d="M50 50 L27 82"></path>
-              <path data-link="contact" d="M50 50 L12 55"></path>
-            </svg>
-
-            <div class="network-core" aria-label="Aditya Kanth Manne profile core">
-              <span class="core-orbit orbit-one" aria-hidden="true"></span>
-              <span class="core-orbit orbit-two" aria-hidden="true"></span>
-              <img src="assets/images/AdityakanthManne.png" alt="Aditya Kanth Manne" width="120" height="120">
-              <div><strong>Aditya</strong><span>AI × Markets</span></div>
-            </div>
-
-            <nav class="network-nodes" aria-label="Profile sections">
-              <button type="button" data-node="about"><i>01</i><strong>About</strong><span>Research focus</span></button>
-              <button type="button" data-node="experience"><i>02</i><strong>Experience</strong><span>Career path</span></button>
-              <button type="button" data-node="projects"><i>03</i><strong>Projects</strong><span>Active systems</span></button>
-              <button type="button" data-node="education"><i>04</i><strong>Education</strong><span>Academic path</span></button>
-              <button type="button" data-node="skills"><i>05</i><strong>Skills</strong><span>Capability matrix</span></button>
-              <button type="button" data-node="contact"><i>06</i><strong>Contact</strong><span>Connect</span></button>
-            </nav>
-          </div>
-
-          <div class="network-legend" aria-live="polite">
-            <span><i class="legend-dot"></i>Profile network online</span>
-            <span id="network-status">Select a node to explore</span>
+          <div class="focus-strip" aria-label="Current focus areas">
+            <span>01 / MACHINE LEARNING</span>
+            <span>02 / QUANT RESEARCH</span>
+            <span>03 / MARKET SYSTEMS</span>
           </div>
         </div>
 
-        <aside class="intelligence-panel" id="intelligence-panel" aria-live="polite" aria-label="Profile information">
-          <div class="panel-kicker"><span id="panel-number">01</span><span id="panel-category">ABOUT ME</span></div>
-          <h2 id="panel-title">Intelligence meets uncertainty.</h2>
-          <div class="panel-body" id="panel-body">
-            <p>I’m an AI Research Engineer in Finance with experience across data engineering, data science, and business analytics.</p>
-            <p>My interests sit where <strong>artificial intelligence, quantitative finance, and game theory</strong> meet.</p>
-            <div class="panel-tags"><span>Prediction markets</span><span>Market microstructure</span><span>Decision systems</span></div>
+        <div class="simulation-terminal reveal" aria-label="Interactive Monte Carlo simulation">
+          <div class="terminal-bar">
+            <div><span class="terminal-light"></span><strong>MONTE CARLO LAB</strong></div>
+            <span>GBM · 252D</span>
           </div>
-          <div class="panel-actions" id="panel-actions">
-            <a href="#about">Full profile ↓</a>
-            <a href="assets/AdityaResume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+          <div class="simulation-heading">
+            <div>
+              <p>SIMULATED ASSET PATHS</p>
+              <h2>Risk under changing regimes</h2>
+            </div>
+            <button class="run-simulation" id="run-simulation" type="button">Run again ↻</button>
           </div>
-          <div class="panel-index" aria-hidden="true"><span>PROFILE NODE</span><strong id="panel-index-value">01 / 06</strong></div>
-        </aside>
+          <div class="chart-wrap">
+            <canvas id="monte-carlo-chart" role="img" aria-label="Monte Carlo price paths with confidence bands"></canvas>
+            <div class="chart-axis chart-axis-y"><span>160</span><span>130</span><span>100</span><span>70</span></div>
+            <div class="chart-axis chart-axis-x"><span>0D</span><span>126D</span><span>252D</span></div>
+          </div>
+          <div class="regime-controls" aria-label="Simulation regime">
+            <button type="button" class="is-active" data-regime="base" aria-pressed="true">Base</button>
+            <button type="button" data-regime="volatile" aria-pressed="false">High volatility</button>
+            <button type="button" data-regime="stress" aria-pressed="false">Stress</button>
+          </div>
+          <div class="simulation-metrics" aria-live="polite">
+            <div><span>MEAN RETURN</span><strong id="sim-return">—</strong></div>
+            <div><span>95% VaR</span><strong id="sim-var">—</strong></div>
+            <div><span>P(RETURN &gt; 0)</span><strong id="sim-positive">—</strong></div>
+            <div><span>PATHS</span><strong>160</strong></div>
+          </div>
+          <p class="simulation-note">Illustrative geometric Brownian motion—not an investment forecast.</p>
+        </div>
       </div>
 
-      <a class="classic-view" href="#work">Continue to research <span aria-hidden="true">↓</span></a>
+      <div class="shell hero-tape" aria-hidden="true">
+        <span>WALK-FORWARD VALIDATION</span><i></i>
+        <span>PROBABILISTIC MODELING</span><i></i>
+        <span>MARKET MICROSTRUCTURE</span><i></i>
+        <span>PORTFOLIO RISK</span>
+      </div>
     </section>
 
-    <section class="intro section-light">
-      <div class="shell intro-grid reveal">
-        <p class="section-label">The short version</p>
-        <h2>Research for markets that never stand still.</h2>
-        <p class="large-copy">I investigate how learning systems can forecast uncertain outcomes, discover signals, price risk, and make better decisions in fast-moving financial markets.</p>
+    <section class="positioning section-light" aria-label="Professional focus">
+      <div class="shell positioning-grid reveal">
+        <p class="section-label">RESEARCH POSITIONING</p>
+        <h2>AI/ML engineering discipline.<br>Quant research rigor.</h2>
+        <p>Ph.D. student in Artificial Intelligence applying Python and statistical methods to financial-market research and AI evaluation. I’m targeting <strong>AI/ML engineering</strong> and <strong>quantitative research</strong> opportunities.</p>
       </div>
-      <div class="shell stats reveal" aria-label="Career highlights">
-        <div><strong>3+</strong><span>Years in data & analytics</span></div>
-        <div><strong>711</strong><span>LinkedIn followers</span></div>
-        <div><strong>500+</strong><span>Professional connections</span></div>
-        <div><strong>AWS</strong><span>ML Engineer certified</span></div>
+      <div class="shell signal-stats reveal">
+        <div><span>FOCUS</span><strong>AI/ML</strong><small>Models that generalize</small></div>
+        <div><span>FOCUS</span><strong>QUANT</strong><small>Evidence before narrative</small></div>
+        <div><span>EXPERIENCE</span><strong>3+ YRS</strong><small>Data and analytics</small></div>
+        <div><span>CREDENTIAL</span><strong>AWS ML</strong><small>Engineer — Associate</small></div>
       </div>
     </section>
 
-    <section class="work section-light" id="work">
+    <section class="research section-muted" id="research">
       <div class="shell section-heading reveal">
-        <p class="section-label">Current research projects</p>
-        <h2>Learning, pricing, and acting under uncertainty.</h2>
-        <p>Five active projects exploring autonomous financial research, prediction markets, portfolio intelligence, and simulated market environments.</p>
+        <div>
+          <p class="section-label">SELECTED RESEARCH / 03</p>
+          <h2>Research systems built around evidence.</h2>
+        </div>
+        <p>Three directions spanning systematic research infrastructure, market microstructure, and trustworthy AI evaluation.</p>
       </div>
-      <div class="shell research-grid">
-        <article class="research-card research-card-featured reveal"><span>PROJECT 01 · IN DEVELOPMENT</span><div class="research-icon" aria-hidden="true">⌁</div><h3>FinResearch Agent</h3><p>An AI research agent designed to support structured financial investigation, evidence synthesis, and quantitative research workflows.</p><ul class="chips"><li>Agentic AI</li><li>Financial research</li><li>LLMs</li></ul></article>
-        <article class="research-card reveal"><span>PROJECT 02 · IN DEVELOPMENT</span><div class="research-icon" aria-hidden="true">◉</div><h3>Prediction Market Agents</h3><p>Autonomous agents for researching uncertain events, forming calibrated forecasts, and participating in prediction-market environments.</p><ul class="chips"><li>Forecasting</li><li>Multi-agent systems</li><li>Markets</li></ul></article>
-        <article class="research-card reveal"><span>PROJECT 03 · IN DEVELOPMENT</span><div class="research-icon" aria-hidden="true">◎</div><h3>AI Portfolio Manager</h3><p>An intelligent portfolio research system focused on allocation decisions, risk awareness, and adaptive investment analysis.</p><ul class="chips"><li>Portfolio intelligence</li><li>Risk</li><li>ML</li></ul></article>
-        <article class="research-card reveal"><span>PROJECT 04 · IN DEVELOPMENT</span><div class="research-icon" aria-hidden="true">↔</div><h3>Market Simulator</h3><p>A controlled market environment for studying price formation, participant behavior, strategy interaction, and execution dynamics.</p><ul class="chips"><li>Simulation</li><li>Microstructure</li><li>Market making</li></ul></article>
-        <article class="research-card reveal"><span>PROJECT 05 · IN DEVELOPMENT</span><div class="research-icon" aria-hidden="true">✦</div><h3>Research Copilot</h3><p>An autonomous quantitative research copilot for turning hypotheses into organized experiments, analysis, and reproducible research artifacts.</p><ul class="chips"><li>Quant research</li><li>Automation</li><li>AI agents</li></ul></article>
+
+      <div class="shell project-stack">
+        <article class="project-card project-featured reveal">
+          <div class="project-index"><span>01</span><i></i><em>IN DEVELOPMENT</em></div>
+          <div class="project-content">
+            <p class="project-type">PLATFORM · SYSTEMATIC RESEARCH</p>
+            <h3>Quant-Lab</h3>
+            <p class="project-summary">A modular, vendor-neutral quantitative research platform organized around one workflow orchestrator and a plug-in capability bus.</p>
+            <div class="project-detail-grid">
+              <div><span>CAPABILITIES</span><p>Data · Features · Models · Signals · Validation · Portfolio risk · Backtesting</p></div>
+              <div><span>FIRST RESEARCH TRACK</span><p>12–1 momentum compared with filing-aware value and quality features.</p></div>
+              <div><span>EVALUATION</span><p>Chronological walk-forward testing, transaction-cost sensitivity, and portfolio constraints.</p></div>
+            </div>
+            <div class="project-tags"><span>Python</span><span>Research infrastructure</span><span>Walk-forward</span><span>Portfolio risk</span></div>
+            <a class="project-link" href="https://github.com/AdityaKanthManne/Quant-Lab" target="_blank" rel="noreferrer">View repository ↗</a>
+          </div>
+          <div class="project-visual quantlab-visual" aria-hidden="true">
+            <div class="system-node node-data">DATA</div>
+            <div class="system-node node-features">FEATURES</div>
+            <div class="system-node node-models">MODELS</div>
+            <div class="system-node node-risk">RISK</div>
+            <div class="system-core"><span>QL</span><small>ORCHESTRATOR</small></div>
+            <svg viewBox="0 0 400 320" preserveAspectRatio="none">
+              <path d="M200 160 L80 62 M200 160 L322 68 M200 160 L330 254 M200 160 L74 250"></path>
+            </svg>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index"><span>02</span><i></i><em>2026 · RESEARCH BUILD</em></div>
+          <div class="project-content">
+            <p class="project-type">MICROSTRUCTURE · PRICE DISCOVERY</p>
+            <h3>BTC Perpetual–Spot Lead–Lag &amp; Maker Quoting</h3>
+            <p class="project-summary">A BTCUSDT workflow using top-of-book quotes and trades from Binance spot and futures to evaluate lead–lag over 1–10-second horizons.</p>
+            <p class="project-method"><span>Research design</span> Receive-time alignment, clock-gap diagnostics, delayed-perpetual placebos, mirrored-venue checks, and synthetic lead/null/delayed-feed cases with all 30 tests passing.</p>
+            <div class="project-tags"><span>Python</span><span>pandas</span><span>NumPy</span><span>scikit-learn</span></div>
+          </div>
+          <div class="project-visual orderbook-visual" aria-hidden="true">
+            <div class="book-labels"><span>BID DEPTH</span><span>ASK DEPTH</span></div>
+            <div class="order-row"><i style="--bid:82%"></i><b></b><i style="--ask:35%"></i></div>
+            <div class="order-row"><i style="--bid:64%"></i><b></b><i style="--ask:48%"></i></div>
+            <div class="order-row active"><i style="--bid:91%"></i><b></b><i style="--ask:72%"></i></div>
+            <div class="order-row"><i style="--bid:50%"></i><b></b><i style="--ask:86%"></i></div>
+            <div class="order-row"><i style="--bid:28%"></i><b></b><i style="--ask:63%"></i></div>
+            <div class="mid-price">1–10S LEAD–LAG <span>5 LATENCY SETTINGS</span></div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-index"><span>03</span><i></i><em>2026 · AI EVALUATION</em></div>
+          <div class="project-content">
+            <p class="project-type">RAG · FAILURE DIAGNOSIS</p>
+            <h3>RAGFix</h3>
+            <p class="project-summary">An offline end-to-end QA demo that ingests versioned Markdown, chunks by headings, and produces traceable retrieval and answer records for failure review.</p>
+            <p class="project-method"><span>Evaluation protocol</span> BM25 and TF-IDF/SVD baselines, dense/hybrid retrieval, version filters, citation and abstention validators, paired bootstrap intervals, McNemar tests, and locked holdouts.</p>
+            <div class="project-tags"><span>Python</span><span>BM25</span><span>TF-IDF/SVD</span><span>RAG evaluation</span></div>
+          </div>
+          <div class="project-visual rag-visual" aria-hidden="true">
+            <div class="rag-node rag-query">QUERY</div>
+            <div class="rag-node rag-bm25">BM25</div>
+            <div class="rag-node rag-dense">DENSE</div>
+            <div class="rag-node rag-fusion">RRF</div>
+            <div class="rag-node rag-answer">ANSWER</div>
+            <div class="rag-guard">CITATION + ABSTENTION GUARDRAILS</div>
+            <svg viewBox="0 0 420 250" preserveAspectRatio="none"><path d="M62 126 L142 72 M62 126 L142 178 M190 72 L250 126 M190 178 L250 126 M298 126 L363 126"></path></svg>
+          </div>
+        </article>
       </div>
-      <div class="shell research-note reveal"><p>Detailed case studies, repositories, and results will be added as the work develops.</p><span>Active research portfolio</span></div>
     </section>
 
-    <section class="experience section-dark" id="experience">
-      <div class="shell section-heading reveal"><p class="section-label">Experience</p><h2>From raw data to real-world impact.</h2></div>
-      <div class="shell timeline">
-        <article class="timeline-item reveal"><div><p class="timeline-date">Jul 2024 — Present</p><h3>Data Coordinator</h3><p class="company">Early Learning Coalition of Flagler &amp; Volusia</p></div><div><ul><li>Built a nightly incremental Python pipeline moving state-source data through a SQL Server warehouse into WebAuthor CRM.</li><li>Integrated vendor APIs with YAML-based ETL configuration and schema-drift monitoring; reconciled general ledger, provider, and enrollment data.</li><li>Converted an Excel macro workflow to Python and developed Tableau reporting for provider monitoring, enforcement, Gold Seal counts, SR/VPK reasons, and DCF violations.</li></ul></div></article>
-        <article class="timeline-item reveal"><div><p class="timeline-date">Feb 2024 — Jul 2024</p><h3>BI Analyst</h3><p class="company">Smart Grow Infotech</p></div><div><ul><li>Built and evaluated logistic-regression and gradient-boosting churn models, improving early identification of at-risk customers by 22%.</li><li>Developed Airflow feature pipelines and FastAPI inference endpoints; tracked experiments and model drift with MLflow.</li><li>Applied ARIMA, XGBoost, and Prophet forecasting to customer and business data and presented results through dashboards and reports.</li></ul></div></article>
-        <article class="timeline-item reveal"><div><p class="timeline-date">Oct 2018 — Nov 2021</p><h3>Data Analyst</h3><p class="company">Vesper Distributions</p></div><div><ul><li>Developed machine-learning algorithms associated with a 15% increase in customer retention.</li><li>Automated Python/SQL ingestion and validation workflows, reducing data-load errors by 60%.</li></ul></div></article>
+    <section class="method section-dark" aria-labelledby="method-title">
+      <div class="shell section-heading reveal">
+        <div><p class="section-label">RESEARCH OPERATING SYSTEM</p><h2 id="method-title">From hypothesis to defensible result.</h2></div>
+        <p>Every research direction is organized around chronology, leakage control, robust baselines, and realistic costs.</p>
+      </div>
+      <div class="shell method-track reveal">
+        <div class="method-line" aria-hidden="true"><i></i></div>
+        <article><span>01</span><h3>Question</h3><p>Define the decision, horizon, universe, and measurable claim.</p></article>
+        <article><span>02</span><h3>Data</h3><p>Preserve point-in-time availability and audit transformations.</p></article>
+        <article><span>03</span><h3>Model</h3><p>Start with interpretable baselines before adding complexity.</p></article>
+        <article><span>04</span><h3>Validate</h3><p>Use time-ordered evaluation, calibration, and stability tests.</p></article>
+        <article><span>05</span><h3>Decide</h3><p>Measure costs, constraints, risk, and operational usefulness.</p></article>
       </div>
     </section>
 
-    <section class="about section-light" id="about">
-      <div class="shell about-grid">
-        <div class="portrait-wrap reveal"><img src="assets/images/AdityakanthManne.png" alt="Aditya Kanth Manne" loading="lazy"></div>
-        <div class="about-copy reveal"><p class="section-label">About</p><h2>AI research for financial decisions.</h2><p>I’m an AI Research Engineer in Finance with more than three years of experience across data engineering, data science, and business analytics. I’m especially interested in systems that learn from market behavior and remain useful under uncertainty.</p><p>I’m open to roles in quantitative research, prediction markets, and ML/AI-driven market making—teams where rigorous experiments, strong engineering, and market intuition meet.</p><div class="skill-groups"><div><strong>Research</strong><span>Prediction · Market microstructure · Options · Risk</span></div><div><strong>Model</strong><span>Machine learning · NLP · Time series · RL</span></div><div><strong>Build</strong><span>Python · SQL · AWS · Git</span></div></div></div>
+    <section class="experience section-light" id="experience">
+      <div class="shell section-heading reveal">
+        <div><p class="section-label">EXPERIENCE</p><h2>Engineering reliable data into decisions.</h2></div>
+        <p>Production data work that supports the research discipline behind my AI/ML and quantitative focus.</p>
+      </div>
+      <article class="shell experience-card reveal">
+        <div class="experience-meta">
+          <span>JUL 2024 — PRESENT</span>
+          <h3>Data Analyst</h3>
+          <p>Early Learning Coalition of Flagler &amp; Volusia</p>
+        </div>
+        <ul>
+          <li>Built an incremental Python ETL through SQL Server to WebAuthor, delivering a repeatable nightly source-to-CRM workflow.</li>
+          <li>Added YAML-driven ETL settings and schema-drift monitoring, making vendor integrations configurable and surfacing source changes for review.</li>
+          <li>Reconciled General Ledger, provider, and enrollment datasets across three data domains for consistent downstream analysis.</li>
+          <li>Built Tableau Provider Analytics views covering monitoring outcomes, progressive enforcement, and Gold Seal counts by year.</li>
+          <li>Reported SR/VPK reasons across three fiscal years and the top five DCF violations; converted the Excel macro workflow to Python.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="profile section-muted" id="profile">
+      <div class="shell profile-grid">
+        <div class="profile-intro reveal">
+          <div class="portrait-frame">
+            <img src="assets/images/AdityakanthManne.png" alt="Aditya Kanth Manne" loading="lazy">
+            <span>AI/ML<br>QUANT</span>
+          </div>
+          <p class="section-label">PROFILE</p>
+          <h2>Research mindset.<br>Engineering discipline.</h2>
+          <p>I’m a Ph.D. student in Artificial Intelligence with an M.S. in Engineering Management and Data Analyst experience. I apply Python and statistical methods to financial-market research and AI evaluation, with current work in high-frequency lead–lag analysis, execution-cost simulation, retrieval evaluation, and grounded AI systems.</p>
+        </div>
+        <div class="capability-matrix reveal">
+          <article><span>01 / RESEARCH</span><h3>Quantitative methods</h3><p>Probability · Bayesian inference · Optimization · Stochastic calculus · Econometrics · Factor models · Derivatives · Portfolio optimization · Market impact</p></article>
+          <article><span>02 / MODEL</span><h3>AI and machine learning</h3><p>PyTorch · Gradient boosting · XGBoost · Transformers · Embeddings · LLM/RAG systems · BM25 · Citation and abstention evaluation · MLOps</p></article>
+          <article><span>03 / BUILD</span><h3>Engineering and data</h3><p>Python · R · SQL · C++ · pandas · NumPy · Polars · PyArrow · FastAPI · Airflow · Spark · MLflow · LangGraph · Qdrant · pytest · AWS</p></article>
+          <article><span>04 / ANALYZE</span><h3>Markets and evaluation</h3><p>Market microstructure · Alpha research · Backtesting · Transaction costs · Lead–lag analysis · Chronological splits · Bootstrap confidence intervals · Model diagnostics</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="credentials education section-muted" id="education">
-      <div class="shell section-heading reveal"><p class="section-label">Education</p><h2>Academic foundations for intelligent systems.</h2></div>
-      <div class="shell credential-grid">
-        <article class="credential education-card reveal"><p>2026 — 2029</p><h3>Ph.D. in Artificial Intelligence</h3><span>University of the Cumberlands</span><strong>In progress</strong></article>
-        <article class="credential education-card reveal"><p>2022 — 2023</p><h3>M.S. Engineering Management</h3><span>Data Science · University of South Florida</span><strong>3.83 / 4.0 GPA</strong></article>
-        <article class="credential education-card reveal"><p>2016 — 2020</p><h3>B.E. Mechanical Engineering</h3><span>Industrial Engineering · JNTU Hyderabad</span><strong>3.47 / 4.0 GPA</strong></article>
+    <section class="credentials section-light" id="credentials">
+      <div class="shell credentials-grid">
+        <div class="credential-column reveal">
+          <p class="section-label">EDUCATION</p>
+          <article><span>2026 — PRESENT</span><div><h3>Ph.D. in Artificial Intelligence</h3><p>University of the Cumberlands · In progress</p></div></article>
+          <article><span>2022 — 2023</span><div><h3>M.S. Engineering Management</h3><p>Data Science · University of South Florida · 3.83 / 4.0</p></div></article>
+        </div>
+        <div class="credential-column reveal">
+          <p class="section-label">CERTIFICATIONS</p>
+          <article><span>VALID THROUGH MAY 2028</span><div><h3>AWS Machine Learning Engineer — Associate</h3><a href="https://www.credly.com/badges/4bb6cfda-81a1-4c8b-b867-775bef4367dd/public_url" target="_blank" rel="noreferrer">Verify credential ↗</a></div></article>
+        </div>
       </div>
     </section>
 
-    <section class="credentials certifications section-light" id="certifications">
-      <div class="shell section-heading reveal"><p class="section-label">Certifications</p><h2>Specialized, industry-recognized learning.</h2></div>
-      <div class="shell certification-grid">
-        <article class="credential cert-card reveal"><div class="cert-mark aws-mark" role="img" aria-label="Amazon Web Services">aws<span></span></div><div><p>2025</p><h3>AWS Machine Learning Engineer — Associate</h3><a href="https://www.credly.com/badges/4bb6cfda-81a1-4c8b-b867-775bef4367dd/public_url" target="_blank" rel="noreferrer">Verify credential ↗</a></div></article>
-        <article class="credential cert-card reveal"><div class="cert-mark usf-mark" role="img" aria-label="University of South Florida">USF</div><div><p>2023</p><h3>Technology Management Graduate Certificate</h3><span>University of South Florida</span><a href="https://www.michaelsutter.com/ediploma?fn=diplomastatuscheck&amp;key=020000009c153f0bc3fb7508cb0fd41bfa76507c6c6ce606cbd14b7441426fdc6e87a95b299e4d4b26555b296a536832ce0800c20e47eef3a808565bbfdde11620291b5f" target="_blank" rel="noreferrer">Verify certificate ↗</a></div></article>
-        <article class="credential cert-card reveal"><div class="cert-image"><img src="assets/images/Google PM.png" alt="Google Project Management certificate badge" loading="lazy"></div><div><p>2022</p><h3>Google Project Management Professional Certificate</h3><span>Google · Coursera</span><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/75PY5QSAD3GG" target="_blank" rel="noreferrer">Verify certificate ↗</a></div></article>
+    <section class="resource-cta section-muted">
+      <div class="shell resource-cta-inner reveal">
+        <div><p class="section-label">LEARNING LEDGER</p><h2>Research notes start with better sources.</h2></div>
+        <p>A curated collection of courses, papers, channels, and practitioner research across quantitative finance and machine learning.</p>
+        <a class="button button-dark" href="resources.html">Browse resources ↗</a>
       </div>
     </section>
 
     <section class="contact section-dark" id="contact">
-      <div class="shell contact-inner reveal">
-        <p class="section-label">Open to the right research team.</p>
-        <h2>Building the future of markets?<br><span>Let’s talk.</span></h2>
-        <p>Open to AI research engineering, prediction-market research, quantitative research, and ML/AI market-making roles.</p>
-        <div class="contact-actions"><a class="button button-light" href="mailto:adityamanneqr@gmail.com">Start a conversation</a><a class="text-link" href="https://www.linkedin.com/in/adityakanthmanne/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="text-link" href="https://github.com/adityakanthmanne" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      <div class="shell contact-grid reveal">
+        <div>
+          <p class="section-label">OPEN TO AI/ML + QUANT RESEARCH</p>
+          <h2>Let’s build systems that survive contact with uncertainty.</h2>
+        </div>
+        <div class="contact-copy">
+          <p>I’m seeking Summer 2027 quantitative research, quantitative analytics, and AI/ML internships in banking and investment firms.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:amanne62115@ucumberlands.edu">Email me ↗</a>
+            <a href="assets/Aditya_Kanth_Manne_Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+            <a href="https://www.linkedin.com/in/adityakanthmanne/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="https://github.com/adityakanthmanne" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="shell"><p>© <span id="year"></span> Aditya Kanth Manne</p><a href="#top">Back to top ↑</a></div></footer>
+  <footer>
+    <div class="shell"><p>© <span id="year"></span> Aditya Kanth Manne</p><span>AI/ML × QUANTITATIVE RESEARCH</span><a href="#top">Back to top ↑</a></div>
+  </footer>
   <script src="portfolio.js"></script>
 </body>
 </html>
